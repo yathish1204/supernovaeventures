@@ -1,0 +1,10 @@
+.title{
+    color: var(--secondaryCoral, #F76B5D);
+    text-align: center;
+    /* font-family: "AR One Sans"; */
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 4.2rem; /* 129.231% */
+    /* text-transform: uppercase; */
+    margin-top: 6.25rem;
+}
