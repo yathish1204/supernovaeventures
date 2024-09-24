@@ -13,6 +13,9 @@ const page = () => {
       Main content goes here except navbar and footer
       <Title text1={'ABOUT US'} />
       <Button text='Find out more' href='/about' />
+      <Title text1={'OUR Services'} />
+      <Title text1={'OUR Happy Clients!'} />
+      <Title text1={'Any Queries '} />
     </div>
   )
 }

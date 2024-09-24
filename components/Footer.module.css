@@ -1,0 +1,114 @@
+.footer{
+    display: flex;
+    width: 100vw;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5625rem;
+    background: var(--BGSecondary, #F7F7F7);
+    user-select: none;
+}
+
+.footerInner{
+    display: flex;
+    padding: 2.5rem 6.25rem 3.125rem 6.25rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 0.5px solid  var(--TextSecondary,#808080);
+}
+
+.logoContainer{
+    display: flex;
+    width: 13.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.logo{
+    width: 5rem;
+    height: 5.73075rem;
+}
+
+.logoTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+    justify-content: flex-start;
+}
+
+.h4{
+    color: var(--HeadingColor1, #393939);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footerLinks{
+    display: flex;
+    width: 14.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+ 
+.ul{
+    display: flex;
+    width: 9.1875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.li{
+    color: var(--TextSecondary, #606060);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.brandTagLine{
+    color: var(--HeadingColor1, #393939);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.iconContainer{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.iconSet{
+    display: flex;
+    width: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.icons{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.icons:hover{
+    opacity: 0.80;
+}
+
+.icons:active{
+    opacity: 0.65;
+}
+
+.copy{
+    color: var(--TextSecondary, #606060);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.1rem; /* 210% */
+}
+

@@ -1,0 +1,31 @@
+.mainNot{
+    display: flex;
+    width: 51.0625rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 6.25rem;
+}
+
+.imgNot{
+    width: 16rem;
+    height: 11rem;
+}
+
+.quote{
+    color: #000;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 2.625rem; /* 140% */
+    height: 6rem;
+    width: 600px;
+    text-wrap: wrap;
+}

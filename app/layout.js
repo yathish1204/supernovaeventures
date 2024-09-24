@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Title from "@/components/Title";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Hero />
         {children}
-        
+        <Footer />
       </body>
     </html>
   );

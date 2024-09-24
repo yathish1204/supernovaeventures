@@ -1,7 +1,7 @@
 
 .nav{
     width: 100vw;
-    padding: 1rem 100px;
+    padding: 0.25rem 100px;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,7 @@
     box-shadow: 0px 4px 20px 0px rgba(236, 113, 93, 0.15);
     backdrop-filter: blur(5px);
     user-select: none;
+    align-items: center;
 }
 
 .logo{
@@ -24,7 +25,7 @@
 }
 
 .logotxt{
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 2.625rem;
@@ -42,7 +43,8 @@
 
 .li{
     color: var(--HeadlinePrimary);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 1.5rem 0.25rem;
     font-weight: 400;
     line-height: 2.1rem;
 }
