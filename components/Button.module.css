@@ -12,6 +12,14 @@
     cursor: pointer;
 }
 
+.btnContainer:hover{
+    background: #ee5749;
+}
+
+.btnContainer:active{
+    background: #ea4d3e;   
+}
+
 .btnText{
     color: var(--Ivory, #FFFFF0);
     text-align: center;

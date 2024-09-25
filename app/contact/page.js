@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '@/components/Contact'
 
 export const metadata = {
   title:'Supernova - Lets get in touch',
@@ -9,7 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      Contact us
+      <Contact />
     </div>
   )
 }

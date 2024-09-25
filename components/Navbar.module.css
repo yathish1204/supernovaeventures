@@ -1,7 +1,7 @@
 
 .nav{
     width: 100vw;
-    padding: 0.25rem 100px;
+    padding: 0rem 100px;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 
 .logoImg{
     width: 2rem;
-    height: 3rem;
+    height: 2.25rem;
     object-fit: contain;
 }
 

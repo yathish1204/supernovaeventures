@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs'
 import React from 'react'
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      about us
+      <AboutUs />
     </div>
   )
 }

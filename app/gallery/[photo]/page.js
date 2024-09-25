@@ -1,4 +1,6 @@
+import Loading from '@/components/Loading';
 import React from 'react'
+import { Suspense } from 'react';
 
 
 export async function generateMetadata({ params }) {
@@ -10,9 +12,11 @@ export async function generateMetadata({ params }) {
 
 const page = ({params}) => {
   return (
-    <div>
-      Photo single {params.photo}
-    </div>
+    <Suspense fallback={<Loading/>} >
+      <div>
+        Photo single {params.photo}
+      </div>
+    </Suspense>
   )
 }
 

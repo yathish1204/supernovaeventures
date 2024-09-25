@@ -16,6 +16,12 @@ const Navbar = () => {
             <li className={styles.li}><NavLink href={`/gallery`}>Gallery</NavLink></li>
             <li className={styles.li}><NavLink href='/about'>About us</NavLink></li>
             <li className={styles.li}><NavLink href='/contact'>Contact us</NavLink></li>
+
+            {/* <NavLink href='/'><li className={styles.li}>Home</li></NavLink>
+            <NavLink href='/services'><li className={styles.li}>Services</li></NavLink>
+            <NavLink href={`/gallery`}><li className={styles.li}>Gallery</li></NavLink>
+            <NavLink href='/about'><li className={styles.li}>About us</li></NavLink>
+            <NavLink href='/contact'><li className={styles.li}>Contact u</li></NavLink> */}
         </ul>
     </nav>
   )

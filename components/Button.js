@@ -4,9 +4,10 @@ import Link from 'next/link'
 
 const Button = ({text,href}) => {
   return (
-    <div className={styles.btnContainer}>
-      <Link href={href}><p className={styles.btnText}>{text}</p></Link>
+    <Link href={href}><div className={styles.btnContainer}>
+      <p className={styles.btnText}>{text}</p>
     </div>
+    </Link>
   )
 }
 

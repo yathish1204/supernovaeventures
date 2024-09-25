@@ -1,3 +1,4 @@
+import Service from '@/components/Service'
 import React from 'react'
 
 export const metadata = {
@@ -10,7 +11,7 @@ const page = () => {
   
   return (
     <div>
-      services
+      <Service />
     </div>
   )
 }

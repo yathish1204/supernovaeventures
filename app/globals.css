@@ -22,4 +22,16 @@ body{
   display: none;
 }
 
+::selection {
+  background-color:var(--accent-color); /* Highlight background color */
+  color:white; /* Highlighted text color */
+}
+
+.floral{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
