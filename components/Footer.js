@@ -2,10 +2,10 @@ import React from 'react'
 import styles from '../components/Footer.module.css'
 import Image from 'next/image'
 import logo from '../assets/supernovalogo1.png'
-import twitter from '../assets/Twitter.png'
-import linkedin from '../assets/LinkedIn.png'
-import youtube from '../assets/YouTube.png'
-import instgarm from '../assets/Instagram.png'
+import twitter from '../assets/Twitter.svg'
+import linkedin from '../assets/LinkedIn1.svg'
+import youtube from '../assets/YouTube.svg'
+import instgarm from '../assets/Instagram.svg'
 import NavLink from './NavLink'
 
 const Footer = () => {
@@ -32,10 +32,10 @@ const Footer = () => {
         <div className={styles.iconSet} >
             <h4 className={styles.h4}>SOCIAL LINKS</h4>
             <ul className={styles.iconContainer}>
-                <li><NavLink  target="_blank" href='http://yathishshettigar.netlify.app'><Image className={styles.icons} src={linkedin} alt='social links'  /></NavLink></li>
-                <li><NavLink target="_blank" href='http://yathishshettigar.netlify.app'><Image className={styles.icons} src={instgarm} alt='social links'  /></NavLink></li>
-                <li><NavLink target="_blank" href='http://yathishshettigar.netlify.app'><Image className={styles.icons} src={youtube} alt='social links'  /></NavLink></li>
-                <li><NavLink target="_blank" href='http://yathishshettigar.netlify.app'><Image className={styles.icons} src={twitter} alt='social links'  /></NavLink></li>
+                <li><NavLink  target="_blank" href='https://www.linkedin.com/in/supernovaeventures'><Image className={styles.icons} src={linkedin} alt='social links'  /></NavLink></li>
+                <li><NavLink target="_blank" href='https://www.instagram.com/supernovaeventures'><Image className={styles.icons} src={instgarm} alt='social links'  /></NavLink></li>
+                <li><NavLink target="_blank" href='https://www.youtube.com/@SupernovaEventures'><Image className={styles.icons} src={youtube} alt='social links'  /></NavLink></li>
+                <li><NavLink target="_blank" href='https://x.com/supernovaeventu'><Image className={styles.icons} src={twitter} alt='social links'  /></NavLink></li>
             </ul>
         </div>
 

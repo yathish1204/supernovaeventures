@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Title from "@/components/Title";
 import Footer from "@/components/Footer";
+import Chat from "@/components/WhatsApp/Chat";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <Hero />
+        <Link href='https://wa.me/918762628710' target='_blank' className='bot'>
+          <Chat />
+        </Link>
         {children}
         <Footer />
       </body>

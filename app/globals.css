@@ -19,7 +19,27 @@ body{
 }
 
 ::-webkit-scrollbar{
-  display: none;
+  width: 10px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track{
+  background: #fbd2cf; 
+  /* border-radius: 8px; */
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #fb7165;
+  border-radius: 4px;
+  border:1px solid var(--accent-color)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:#e7574a; 
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #d54437;
 }
 
 ::selection {
@@ -35,3 +55,9 @@ body{
   align-items: center;
 }
 
+.bot{
+  position: fixed;
+  right: -4rem;
+  bottom: 9rem;
+  z-index: 15;
+}

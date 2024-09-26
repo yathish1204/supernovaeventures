@@ -3,7 +3,7 @@
 import React,{useState,useEffect} from 'react';
 import Image from 'next/image'
 import error from '../assets/error.png'
-import styles from '../components/NotFound.module.css'
+import styles from '../components/Error.module.css'
 import Button from './Button';
 
 const errorMessages = [
@@ -34,8 +34,12 @@ const Error = () => {
     <main className={styles.main}>
         <div className={styles.mainError}>
             <Image className={styles.imgError} src={error} alt='error image' priority />
+            <div className={styles.detailError}>
             <p className={styles.quote}>{randomQuote}</p>
+            <div className={styles.btn}>
             <Button text={'Return home'} href='/' />
+            </div>
+            </div>
         </div>
     </main>
   )

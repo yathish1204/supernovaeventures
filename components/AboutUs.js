@@ -22,36 +22,40 @@ const AboutUs = () => {
                 <Image  src={flower} alt='floral decoration' priority />
         </div>
             <Title text1='ABOUT US' />
-            <div>
-                <div>
-                    <p>Our team is highly collaborative and supportive, coming together on every project to ensure every event reaches it’s full potential.</p>
+            <div className={styles.aboutContent}>
+                {/* <div className={styles.intro}> */}
+                    <p className={styles.introPara}>Our team is highly collaborative and supportive, coming together on every project to ensure every event reaches it’s full potential.</p>
+                {/* </div> */}
+                <div className={styles.mission}>
+                    <h3 className={styles.h3}>Our Mission</h3>
+                    <p className={styles.p}>Our mission is to provide exceptional and reliable manpower, turning your event dreams into reality with excellence and unforgettable experiences.</p>
                 </div>
-                <div>
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to provide exceptional and reliable manpower, turning your event dreams into reality with excellence and unforgettable experiences.</p>
+                <div className={styles.mission}>
+                    <h3 className={styles.h3}>Our Vission</h3>
+                    <p className={styles.p}>Our vision is to redefine event experiences by creating extraordinary and personalized celebrations. We aspire to be the industry’s preferred partner, renowned for our innovation and exceptional service.</p>
                 </div>
-                <div>
-                    <h3>Our Vission</h3>
-                    <p>Our vision is to redefine event experiences by creating extraordinary and personalized celebrations. We aspire to be the industry’s preferred partner, renowned for our innovation and exceptional service.</p>
-                </div>
-                <div>
-                    <h3>Our Core Values</h3>
-                    <ul>
-                        <li><b>Synergistic Collaboration</b>: Fostering unity and innovation through teamwork efficiency.</li>
-                        <li><b>Innovation and Creativity</b>: Driving new ideas and solutions.</li>
-                        <li><b>Exemplary Performance </b>: Delivering exceptional results consistently.</li>
-                        <li><b>Collective Celebration </b>: Sharing in achievements as a unified team.</li>
+                <div className={styles.missionUl}>
+                    <h3 className={styles.h3}>Our Core Values</h3>
+                    <ul className={styles.ul}>
+                        <li className={styles.li}><b className={styles.b}>Synergistic Collaboration </b>: Fostering unity and innovation through teamwork efficiency.</li>
+                        <li className={styles.li}><b className={styles.b}>Innovation and Creativity </b>: Driving new ideas and solutions.</li>
+                        <li className={styles.li}><b className={styles.b}>Exemplary Performance </b>: Delivering exceptional results consistently.</li>
+                        <li className={styles.li}><b className={styles.b}>Collective Celebration </b>: Sharing in achievements as a unified team.</li>
                     </ul>
                 </div>
             </div>
+            <div className={styles.team}>
             <Title text1='OUR TEAM' />
-            <div>
+            </div>
+            <div className={styles.adminContainer}>
                 {
                     admins.map((admin,i)=>{
-                        return <div key={i}>
-                            <Image src={admin.image} alt={admin.name} priority />
-                            <p>{admin.name}</p>
-                            <p>{admin.role}</p>
+                        return <div key={i} className={styles.admin}>
+                            <Image className={styles.adminImg} src={admin.image} alt={admin.name} priority />
+                            <div className={styles.nameRole}>
+                            <p className={styles.name}>{admin.name}</p>
+                            <p className={styles.role}>{admin.role}</p>
+                            </div>
                         </div>
                     })
                 }

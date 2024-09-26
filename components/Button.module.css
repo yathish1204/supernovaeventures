@@ -7,7 +7,7 @@
     border-radius: 0.5rem;
     border: 1px solid var(--secondaryCoral, #F76B5D);
     background: var(--secondaryCoral, #F76B5D);
-    box-shadow: 0px 4px 12px 0px rgba(247, 107, 93, 0.75) inset, 0px 4px 30px 0px rgba(245, 90, 75, 0.12);
+    box-shadow: 0px 4px 12px 0px rgba(247, 107, 93, 0.75) inset, 0px 4px 12px 0px rgba(231, 81, 67, 0.52);
     width: fit-content;
     cursor: pointer;
 }

@@ -1,5 +1,6 @@
-import Button from "@/components/Button"
+import Home from "@/components/Home/Home"
 import Title from "@/components/Title"
+
 
 
 export const metadata = {
@@ -10,12 +11,9 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      Main content goes here except navbar and footer
-      <Title text1={'ABOUT US'} />
-      <Button text='Find out more' href='/about' />
+      <Home />
       <Title text1={'OUR Services'} />
       <Title text1={'OUR Happy Clients!'} />
-      <Title text1={'Any Queries '} />
     </div>
   )
 }

@@ -1,0 +1,32 @@
+.popUp{
+    display: inline-flex;
+    transform: rotate(-90deg);
+    padding: 0.625rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background: #128C7E;    
+}
+
+.popUp:hover{
+    background: #0c796c;    
+}
+
+.popUp:active{
+    background: #096156;    
+}
+
+.whatImg{
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: rotate(90deg);
+    object-fit: contain;
+}
+
+.para{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
