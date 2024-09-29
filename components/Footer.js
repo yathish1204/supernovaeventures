@@ -7,6 +7,7 @@ import linkedin from '../assets/LinkedIn1.svg'
 import youtube from '../assets/YouTube.svg'
 import instgarm from '../assets/Instagram.svg'
 import NavLink from './NavLink'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -42,6 +43,7 @@ const Footer = () => {
       </div>
       {/* <hr className={styles.hr}/> */}
       <p className={styles.copy}>&copy; 2024 - All Rights Reserved | Supernova Eventures</p>
+      <p className={styles.copy}>Designed & Developed - <Link target='_blank'   href='https://www.linkedin.com/in/yathishshettigar'><b>Yathish Shettigar</b></Link></p>
     </footer>
   )
 }

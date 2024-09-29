@@ -3,6 +3,7 @@ import styles  from '../components/Navbar.module.css';
 import Link from 'next/link';
 import logo from '../assets/supernovalogo1.png';
 import NavLink from './NavLink';
+import menu from '../assets/menu.svg';
 
 
 const Navbar = () => {
@@ -16,6 +17,7 @@ const Navbar = () => {
             <li className={styles.li}><NavLink href={`/gallery`}>Gallery</NavLink></li>
             <li className={styles.li}><NavLink href='/about'>About us</NavLink></li>
             <li className={styles.li}><NavLink href='/contact'>Contact us</NavLink></li>
+            <Image className={styles.menu} src={menu} alt='Hamurger menu' priority />
 
             {/* <NavLink href='/'><li className={styles.li}>Home</li></NavLink>
             <NavLink href='/services'><li className={styles.li}>Services</li></NavLink>

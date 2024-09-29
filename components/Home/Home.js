@@ -21,9 +21,9 @@ const Home = () => {
                 <Button text='Find out more' href='/about' /> 
                 </div>
             </div>
-            {/* <div className={styles.right}> */}
-                <Image className={styles.aboutImg} src={aboutImg} alt='About image' priority  />
-            {/* </div> */}
+                <div className={styles.right}>
+                  <Image className={styles.aboutImg} src={aboutImg} alt='About image'  priority  />
+                </div>
       </section>
 
       <div className={styles.qTitle}><Title text1={'Any Queries '} /><Image src={qn} alt='question icon' priority /></div>

@@ -107,8 +107,98 @@
 .copy{
     color: var(--TextSecondary, #606060);
     text-align: center;
+    text-wrap: wrap;
     font-size: 1rem;
     font-weight: 400;
     line-height: 2.1rem; /* 210% */
 }
 
+
+@media screen and  (max-width:1024px) and (min-width:768px) {
+    .footerInner{
+        padding: 2.5rem 2rem 3.125rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        align-self: stretch;
+    }
+    .logoContainer{
+        width: 13.125rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .logo{
+        width: 3.125rem;
+        height: 3.58175rem;
+    }
+    .logoTexts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerLinks{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        width: 100%;
+    }
+    .ul{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .iconSet{
+        /* width: 100%; */
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .iconContainer{
+        align-items:center;
+        align-content: center;
+        gap: 1rem;
+        width: 130%;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        align-items: flex-start;
+    }
+    .footerInner{
+        padding: 3.125rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        align-self: stretch;
+    }
+    .copy{
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .logo{
+        width: 2.5rem;
+        height: 2.86538rem;
+    }
+    .iconSet{
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 1rem;
+        width: 100%;
+    }
+    .iconContainer{
+        align-items:flex-start;
+        align-content: flex-start;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .ul{
+        gap: 0.85rem;
+        width: fit-content;
+    }
+}

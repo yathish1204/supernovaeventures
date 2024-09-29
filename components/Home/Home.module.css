@@ -13,15 +13,19 @@
     margin-bottom: 6.25rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100vw;
     align-self: stretch;
 }
 
 .left{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
+    max-width: 40vw;
+    width: 100%;
 }
 
 .h3{
@@ -44,13 +48,21 @@
 
 
 .right{
-    width: 44.625rem;
-    height: 27.1875rem; 
+    display: flex;
+    max-width: 70vw;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.625rem;
+    height: 27.1875rem;
 }
 
 .aboutImg{
     transition: all 0.4 ease-in-out;
     filter: brightness(1.25);
+    height: 27.1875rem;
+    align-self: stretch;
+    object-fit:fill;
+    height: 100%;
 }
 
 .aboutImg:hover{
@@ -82,4 +94,34 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2.1rem; /* 168% */
+}
+
+/* Tablet breakpoint */
+
+@media screen and  (max-width:1024px) and (min-width:768px){
+    .aboutSec{
+        margin: 0 2rem;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .h3{
+        color: var(--HeadingColor1, #393939);
+        font-size: 1.875rem;
+        font-weight: 600;
+        line-height: 2.625rem; /* 140% */
+        text-align: center;
+    }
+    
+    .p{
+        color: var(--textTertiary, #888);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2.1rem; /* 168% */
+        text-align: center;
+    }
+    
+    .aboutBtn{
+        margin-top: 1rem;
+    }
 }
