@@ -26,10 +26,13 @@ const Home = () => {
                 </div>
       </section>
 
-      <div className={styles.qTitle}><Title text1={'Any Queries '} /><Image src={qn} alt='question icon' priority /></div>
+      <div className={styles.qTitle}><Title text1={'Any Queries '} /><Image className={styles.qn} src={qn} alt='question icon' priority /></div>
       <section className={styles.queries}>
             <p className={styles.p1}>We are pleased to address any queries you may have regarding event execution. Let’s connect to ensure your event’s success.</p>
-            <Button text='Connect with us' href='/contact' />
+            <div className={styles.aboutBtn}>
+              <Button text='Connect with us' href='/contact' />
+            </div>
+            
       </section>
     </main>
   )

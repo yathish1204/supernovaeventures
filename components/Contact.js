@@ -61,7 +61,7 @@ const Contact = () => {
                     <div className={styles.cta}>
                         <Button href='' text='Send Message' />
                     </div>
-                    {sent && <div className={styles.sentMsg}><Image className={styles.check} src={check} alt='checked icon'  /><p className={styles.sent}>Message sent successfully</p></div>}
+                    {sent && <div className={styles.sentMsg}><Image className={styles.check} src={check} alt='checked icon' priority  /><p className={styles.sent}>Message sent successfully</p></div>}
                 </div>
             </div>
     </div>

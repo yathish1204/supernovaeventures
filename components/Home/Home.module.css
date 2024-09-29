@@ -3,26 +3,25 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+    width: 100vw;
 }
 
 /* About Section */
 
 .aboutSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 6.25rem;
     margin-top: 4rem;
     margin-bottom: 6.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 4rem;
-    width: 100vw;
-    align-self: stretch;
 }
 
 .left{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     gap: 1rem;
     max-width: 40vw;
     width: 100%;
@@ -44,14 +43,14 @@
 
 .aboutBtn{
     margin-top: 1rem;
+    width: fit-content;
 }
 
 
 .right{
     display: flex;
     max-width: 70vw;
-    width: 100%;
-    align-items: flex-start;
+    width:auto;
     gap: 0.625rem;
     height: 27.1875rem;
 }
@@ -59,10 +58,9 @@
 .aboutImg{
     transition: all 0.4 ease-in-out;
     filter: brightness(1.25);
-    height: 27.1875rem;
     align-self: stretch;
-    object-fit:fill;
-    height: 100%;
+    object-fit:contain;
+    height: auto;
 }
 
 .aboutImg:hover{
@@ -75,6 +73,7 @@
     display: inline-flex;
     gap: 0.4rem;
     justify-content: center;
+    align-items: center;
     width: 100vw;
 }
 
@@ -86,6 +85,11 @@
     gap: 1.5rem;
     margin-top: 2.5rem;
     margin-bottom: 6.25rem;
+    text-wrap: wrap;
+}
+.qn{
+    width: 2.5rem;
+    height: 2.5rem;    
 }
 
 .p1{
@@ -100,28 +104,122 @@
 
 @media screen and  (max-width:1024px) and (min-width:768px){
     .aboutSec{
-        margin: 0 2rem;
-        align-items: center;
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         gap: 2rem;
+        margin: 0 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .left{
+        align-items:flex-start;
+        max-width: 100vw;
+        width: 100%;
     }
     .h3{
-        color: var(--HeadingColor1, #393939);
-        font-size: 1.875rem;
-        font-weight: 600;
-        line-height: 2.625rem; /* 140% */
         text-align: center;
+    }
+    .right{
+        max-width: 100vw;
+        width:100%;
+        gap: 0.625rem;
+        display: flex;
+        justify-content: center;
+        height: fixed;
+    }
+    .aboutImg{
+        width: 100%;
+    }
+    .queries{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 100vw;
+        width: 100%;
+        margin: 0 2rem;
+        align-self: stretch;
+        text-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+    .qTitle{
+        width: 100vw;
+        margin-top: 4rem;
+        align-items: center;
     }
     
-    .p{
-        color: var(--textTertiary, #888);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 2.1rem; /* 168% */
-        text-align: center;
-    }
     
     .aboutBtn{
         margin-top: 1rem;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:768px){
+    .aboutSec{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 2rem;
+        margin-top: 2rem;
+        max-width:90vw;
+        width: 100%;
+    }
+    .h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .left{
+        max-width: 100vw;
+        width: 100%;
+        gap:0.5rem;
+    }
+    .right{
+        height:fit-content;
+        max-width: 100vw;
+        width: 100%;
+    }
+    .aboutImg{
+        width: auto;
+    }
+    
+    
+    .p{
+        font-size: 1rem;
+        line-height: 1.85rem;
+    }
+    .qTitle{
+        gap: 0.4rem;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 6.25rem;
+    }
+    .queries{
+        align-items: flex-start;
+        gap: 1rem;
+        max-width:90vw;
+        width: 100%;
+        align-self: stretch;
+        text-wrap: wrap;
+        margin: 0 1rem;
+        margin-bottom: 6.25rem;
+        margin-top: 1rem;
+    }
+    .p1{
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.85rem;
+    }
+    .qn{
+        width: 1.5rem;
+        height: 1.5rem;    
+    }
+    
+    .aboutBtn{
+        margin-top: 0.25rem;
+        max-width: 100vw;
+        width: 100%;
     }
 }

@@ -7,3 +7,19 @@
     text-transform: uppercase;
     /* margin-top: 6.25rem; */
 }
+
+
+@media screen and (max-width:1024px) and (min-width:768px){
+    .title{
+        font-size: 2rem;
+        line-height: 4.2rem; /* 210% */
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .title{
+        font-size: 1.75rem;
+        line-height: 3rem; /* 210% */
+    }
+}
