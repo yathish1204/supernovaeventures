@@ -29,3 +29,44 @@
     width: 600px;
     text-wrap: wrap;
 }
+
+.notfoundCta{
+    width: fit-content;
+}
+
+
+
+@media screen and  (max-width:1024px) and (min-width:768px){
+    .quote{
+        font-size: 1.25rem;
+        line-height: 2.625rem; /* 140% */
+        height: 6rem;
+        text-wrap: wrap;
+    }
+    .notfoundCta{
+        width: fit-content;
+    }
+} 
+
+@media screen and (max-width:768px){
+    .mainNot{
+        gap: 1rem;
+    }
+    .imgNot{
+        width: 90vw;
+        height: fit-content;
+    }
+    .quote{
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2rem; 
+        text-wrap: wrap;
+        width: 90vw;
+    }
+    .detailError{
+        width: fit-content;
+    }
+    .notfoundCta{
+        width: 90vw;
+    }
+}

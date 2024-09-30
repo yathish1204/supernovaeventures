@@ -36,9 +36,11 @@ const Error = () => {
             <Image className={styles.imgError} src={error} alt='error image' priority />
             <div className={styles.detailError}>
             <p className={styles.quote}>{randomQuote}</p>
-            <div className={styles.btn}>
-            <Button text={'Return home'} href='/' />
+            {/* <div className={styles.btn}> */}
+            <div className={styles.errorCta}>
+              <Button text={'Return home'} href='/' />
             </div>
+            {/* </div> */}
             </div>
         </div>
     </main>

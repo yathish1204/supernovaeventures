@@ -30,7 +30,7 @@
 }
 
 .quote{
-    color: #000;
+    color: var(--textTertiary, #393939);
     text-align: center;
     font-size: 1.25rem;
     font-weight: 600;
@@ -38,4 +38,46 @@
     height: 6rem;
     width: 600px;
     text-wrap: wrap;
+}
+
+.errorCta{
+    width: fit-content;
+}
+
+
+
+
+@media screen and  (max-width:1024px) and (min-width:768px){
+    .quote{
+        font-size: 1.25rem;
+        line-height: 2.625rem; /* 140% */
+        height: 6rem;
+        text-wrap: wrap;
+    }
+    .errorCta{
+        width: fit-content;
+    }
+} 
+
+@media screen and (max-width:768px){
+    .mainError{
+        gap: 1rem;
+    }
+    .imgError{
+        width: 90vw;
+        height: fit-content;
+    }
+    .quote{
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2rem; 
+        text-wrap: wrap;
+        width: 90vw;
+    }
+    .detailError{
+        width: fit-content;
+    }
+    .errorCta{
+        width: 90vw;
+    }
 }

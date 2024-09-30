@@ -58,6 +58,6 @@ body{
 .bot{
   position: fixed;
   right: -4rem;
-  bottom: 9rem;
+  bottom: 7rem;
   z-index: 15;
 }

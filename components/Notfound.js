@@ -34,7 +34,9 @@ const Notfound = () => {
         <div className={styles.mainNot}>
             <Image className={styles.imgNot} src={notfound} alt='notfound 404 image' priority />
             <p className={styles.quote}>{randomQuote}</p>
+            <div className={styles.notfoundCta}>
             <Button text={'Return home'} href='/' />
+            </div>
         </div>
     </main>
   )
