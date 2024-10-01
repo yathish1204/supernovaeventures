@@ -1,12 +1,41 @@
-.h2{
+.serviceSec {
+    width: 100vw;
+    margin: 1rem 0 6.25rem;
+    overflow: hidden; /* Prevent overflow during animation */
+}
+
+.floral {
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 6.25rem;
+    align-items: space-between;
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.6s forwards; /* Fade-in animation */
+}
+
+.h2 {
     color: var(--HeadingColor1, #393939);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3.5rem; /* 140% */
+    transition: color 0.3s; /* Transition for color changes */
 }
 
-.p{
+.p {
     color: var(--textTertiary, #888);
     text-align: center;
     font-size: 1.25rem;
@@ -16,43 +45,51 @@
     margin-top: 0.4rem;
 }
 
-.h3{
+.h3 {
     color: var(--HeadingColor1, #393939);
     font-size: 1.875rem;
     font-weight: 600;
     line-height: 2.625rem; /* 140% */
 }
 
-
-.ul{
+.ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.li{
+.li {
     color: var(--textTertiary, #888);
-    font-size: em;
+    font-size: 1em; /* Fixed font size */
     font-weight: 400;
     line-height: 2.1rem; /* 168% */
 }
 
-.b{
+.b {
     color: var(--HeadingColor1, #393939);
     font-size: 1.15rem;
     font-weight: 500;
     line-height: 2.1rem; /* 168% */
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     align-self: stretch;
+    background-color: white; /* Background color */
+    padding: 1.5rem; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
 }
 
-.left{
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.left {
     display: flex;
     width: 44.375rem;
     flex-direction: column;
@@ -60,36 +97,14 @@
     gap: 1.5rem;
 }
 
-.serviceIn{
+.serviceIn {
     display: flex;
     align-items: flex-start;
     gap: 5.625rem;
     margin-top: 2rem;
 }
 
-.service{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0 6.25rem;
-    align-items:space-between;
-}
-
-.serviceSec{
-    width: 100vw;
-    margin-bottom: 6.25rem;
-    margin-top: 1rem;
-}
-
-.why{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.right{
+.right {
     display: flex;
     width: 27.5rem;
     flex-direction: column;
@@ -97,7 +112,7 @@
     gap: 1rem;
 }
 
-.honur{
+.honur {
     display: flex;
     padding: 0rem 0.75rem;
     align-items: center;
@@ -105,151 +120,178 @@
     align-self: stretch;
 }
 
-.excellence{
+.excellence {
     width: 4.75rem;
     height: 4.75rem;
     mix-blend-mode: multiply;
 }
 
-.para{
-    color:var(--HeadingColor1);
+.para {
+    color: var(--HeadingColor1);
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 2.1rem; /* 168% */
 }
 
-/* Tablet breakpoints */
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
 
-@media screen and  (max-width:1024px) and (min-width:768px) {
-    .h2{
+/* Tablet breakpoints */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .h2 {
         text-align: center;
         font-size: 2.5rem;
     }
-    
-    .p{
+
+    .p {
         text-align: center;
         font-size: 1.25rem;
         width: 100vw;
         margin-top: 0.4rem;
     }
-    .service{
+    
+    .service {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         margin: 0 2rem;
-        align-items:space-between;
+        align-items: space-between;
     }
-    .serviceIn{
-        display:flex;
+    
+    .serviceIn {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
         width: 90vw;
     }
-    .honur{
+    
+    .honur {
         align-items: center;
         gap: 1rem;
         align-self: stretch;
     }
-    .ul{
+    
+    .ul {
         flex-direction: column;
         gap: 0.5rem;
         width: auto;
     }
     
-    .left{
+    .left {
         width: 100vw;
     }
-    .right{
-        width:90vw;
+    
+    .right {
+        width: 90vw;
     }
-    .li{
+    
+    .li {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:768px){
-    .h2{
-        text-align:left;
+@media screen and (max-width: 768px) {
+    .h2 {
+        text-align: left;
         font-size: 1.5rem;
         font-weight: 600;
         line-height: 2.8rem;
     }
-    
-    .p{
-        text-align:left;
+
+    .p {
+        text-align: left;
         font-size: 1rem;
         width: 90vw;
         margin-top: 0.4rem;
     }
-    .service{
+
+    .service {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         margin: 0 1rem;
-        align-items:space-between;
+        align-items: space-between;
     }
-    .serviceIn{
-        display:flex;
+
+    .serviceIn {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
         margin-top: 2rem;
         width: 0vw;
     }
-    .card{
-        gap:0.75rem;
+
+    .card {
+        gap: 0.75rem;
     }
-    .honur{
+
+    .honur {
         align-items: center;
         gap: 1rem;
         align-self: stretch;
     }
-    .h3{
+
+    .h3 {
         font-size: 1.25rem;
     }
-    .li{
+
+    .li {
         color: var(--HeadingColor1, #393939);
-        font-size: 1
-        
-        rem;
+        font-size: 1rem;
         line-height: 1.8rem;
     }
-    
-    .b{
+
+    .b {
         color: var(--HeadingColor1, #393939);
         font-size: 1.05rem;
         line-height: 1.8rem;
     }
-    .honur{
+
+    .honur {
         display: flex;
         align-items: center;
         gap: 0.5rem;
     }
-    .para{
+
+    .para {
         color: #000;
         font-size: 1rem;
         font-weight: 400;
     }
-    .excellence{
+
+    .excellence {
         width: 3.125rem;
         height: 3.125rem;
     }
-    .ul{
+
+    .ul {
         flex-direction: column;
         gap: 0.5rem;
         width: 90vw;
     }
-    .left{
+
+    .left {
         width: 90vw;
         gap: 1.25rem;
     }
-    
-    .right{
-        width:90vw;
+
+    .right {
+        width: 90vw;
     }
-    .why{
+
+    .why {
         align-items: flex-start;
         width: 100%;
     }

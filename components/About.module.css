@@ -1,132 +1,159 @@
-.aboutSec{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutSec {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
 }
 
-.aboutContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.9375rem;
-    width: 67.75rem;
-    margin-top: 2rem;
+.floral {
+  margin-bottom: 20px;
 }
 
-
-.intro{
-
+.aboutContent {
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto;
+  padding: 0 20px; /* Add some padding */
 }
 
-.introPara{
-    color: var(--HeadingColor1, #393939);
-    text-align: center;
-    font-size: 1.875rem;
-    width: 100%;
-    font-weight: 600;
-    line-height: 2.625rem; /* 140% */
+.introPara {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555; /* Darker text for better readability */
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease forwards; /* Fade-in animation */
 }
 
-.mission{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+.mission {
+  margin: 20px 0; /* Space between sections */
 }
 
-.h3{
-    color: var(--HeadingColor1, #393939);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.625rem; /* 131.25% */
+.h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
 }
 
-.p{
-    color: var(--textTertiary, #888);
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2.1rem; /* 140% */
-    width: 51.625rem;
+.p {
+  font-size: 16px;
+  color: #666; /* Lighter text for secondary information */
+  line-height: 1.5;
 }
 
-.missionUl{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    }
-
-.ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-start;
+.missionUl {
+  margin: 20px 0;
 }
 
-.li{
-    color: var(--HeadingColor1, #393939);
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2.1rem; /* 140% */
+.ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
 }
 
-.b{
-    color: var(--HeadingColor1, #393939);
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2.1rem; /* 140% */
+.li {
+  margin: 10px 0;
+  position: relative; /* Position for pseudo-elements */
+  padding-left: 20px; /* Space for the bullet */
 }
 
-.team{
-    margin-top: 6.25rem;
-    margin-bottom: 2rem;
+.li::before {
+  content: "✔"; /* Use a custom bullet */
+  position: absolute;
+  left: 0;
+  color: #61dafb; /* Accent color for bullets */
 }
 
-.adminContainer{
-    display: flex;
-    align-items: center;
-    margin: 0 6.25rem;
-    gap: 2rem;
-    margin-bottom: 6.25rem;
+.adminContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center; /* Center items */
+  margin: 20px 0; /* Margin around the container */
 }
 
-.admin{
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    align-items: center;
+.admin {
+  margin: 15px; /* Space between team members */
+  width: calc(33.333% - 30px); /* Three items per row */
+  max-width: 300px; /* Max width for larger screens */
+  background-color: #fff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  overflow: hidden; /* Prevent overflow */
 }
 
-.adminImg{
-    height: 25rem;
-    align-self: stretch;
-    border-radius: 1rem;
-    object-fit: contain;
+.admin:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
-.nameRole{
-    display: flex;
-    flex-direction: column;
+.adminImg {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Transition for zoom effect */
 }
 
-.name{
-    color: #000;
-    text-align: center;
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 2.2rem; /* 140% */
-    align-self: stretch;
+.nameRole {
+  padding: 15px; /* Padding around text */
+  text-align: center; /* Center text */
 }
 
-.role{
-    color: #000;
-    text-align: center;
-    font-size: 1.15rem;
-    font-weight: 400;
-    line-height: 1.8rem; /* 168% */
-    align-self: stretch;
+.name {
+  font-size: 18px; /* Name size */
+  font-weight: bold; /* Bold name */
+  color: #333; /* Dark text for name */
 }
 
+.role {
+  font-size: 14px; /* Role size */
+  color: #777; /* Lighter text for role */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .admin {
+    width: calc(50% - 30px); /* Two items per row */
+  }
+
+  .aboutContent {
+    padding: 0 10px; /* Less padding on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .admin {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .h3 {
+    font-size: 20px; /* Slightly smaller headings */
+  }
+
+  .p, .introPara {
+    font-size: 14px; /* Smaller text for smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  .introPara {
+      font-size: 1.2rem;
+  }
+
+  .h3 {
+      font-size: 2rem;
+  }
+
+  .p {
+      font-size: 1rem;
+  }
+
+  .li {
+      font-size: 1rem;
+  }
+}

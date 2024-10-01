@@ -1,99 +1,134 @@
-
-.nav{
-    width: 100vw;
-    padding: 0rem 6.25rem;
-    z-index: 10;
+.nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background: rgba(253, 253, 253, 0.55);
-    box-shadow: 0px 4px 20px 0px rgba(236, 113, 93, 0.15);
-    backdrop-filter: blur(5px);
-    user-select: none;
-    align-items: center;
-    height: 6rem;
-}
-
-.logo{
+    position: relative;
+    z-index: 10; /* Ensure the navbar is on top */
+  }
+  
+  .logo {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
-}
-
-.logoImg{
-    width: 2rem;
-    height: 2.25rem;
-    object-fit: contain;
-}
-
-.logotxt{
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 2.625rem;
-    color: var(--HeadlinePrimary);
-}
-
-.menu {
-    display: none;
+  }
+  
+  .logoImg {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logotxt {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .ul {
+    display: flex;
+    list-style: none;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .li {
+    margin: 0 1rem;
+  }
+  
+  .li a {
+    color: #1d0c0c;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    font-family:'Times New Roman', Times, serif
+  }
+  
+  .li a:hover {
+    color: #61dafb;
+    transform: translateY(-3px); /* Hover effect */
+  }
+  
+  .menuIcon {
+    display: none; /* Hidden on larger screens */
     cursor: pointer;
-}
-
-
-.ul{
+  }
+  
+  .show {
+    position: fixed; /* Make the menu fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(167, 178, 201, 0.95); /* Semi-transparent background */
     display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    z-index: 9; /* Below navbar */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Fade in/out transition */
+  }
+  
+  .show li {
+    margin: 1rem 0; /* Spacing for links */
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+    font-size: 20px;
+  }
+  
+  /* Animation for each link */
+  .show li:nth-child(1) { animation-delay: 0.1s; }
+  .show li:nth-child(2) { animation-delay: 0.2s; }
+  .show li:nth-child(3) { animation-delay: 0.3s; }
+  .show li:nth-child(4) { animation-delay: 0.4s; }
+  .show li:nth-child(5) { animation-delay: 0.5s; }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide in from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .closeIcon {
+    color: #333;
+    font-size: 30px; /* Increased size for better visibility */
+    position: absolute; /* Position it absolutely */
+    top: 50px; /* Adjust position as necessary */
+    right: 30px; /* Adjust position as necessary */
+    z-index: 10; /* Ensure it is on top */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Overlay for close icon */
+  .closeOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.li{
-    color: var(--HeadlinePrimary);
-    font-size: 1.25rem;
-    padding: 1.5rem 0.25rem;
-    font-weight: 400;
-    line-height: 2.1rem;
-}
-
-.li:hover{
-    color: #616161;
-}
-
-
-/* tablet breakpoint */
-
-
-@media screen and  (max-width:1024px) and (min-width:768px) {
-   .menu{
-    display: block;
-   }
-   .li{
-    display: none;
-   }
-   .nav{
-    padding: 0 2rem;
-   }
-}
-
-@media screen and (max-width:768px){
-    .li{
-        display: none;
+    background-color: antiquewhite;
+    justify-content: flex-end; /* Align to the right */
+    align-items: flex-start; /* Align to the top */
+    z-index: 8; /* Make sure it is below the menu but above everything else */
+    background: transparent; /* Make background transparent */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 800px) {
+    .menuIcon {
+      display: block; /* Show menu icon on smaller screens */
     }
-    .menu{
-        display: block;
+  
+    .ul {
+      display: none; /* Hide the menu on mobile initially */
     }
-    .nav{
-        padding: 0 1rem;
-        height: 5rem;
+  
+    .show {
+      display: flex; /* Show menu when toggled */
     }
-    .logoImg{
-        width: 2rem;
-        height: 2.3rem; 
-    }
-    .logoText{
-        color: var(--HeadingColor1, #393939);
-        font-size: 1.25rem;
-        font-weight: 600;
-        line-height: 2.625rem; /* 210% */
-    }
-}
+  }
+  
