@@ -13,7 +13,6 @@ const page = () => {
     <div>
       <Home />
       <Title text1={'OUR Services'} />
-      <Title text1={'OUR Happy Clients!'} />
     </div>
   )
 }

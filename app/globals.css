@@ -16,6 +16,15 @@
 body{
   background-color: var(--bg-primary,#fcfcfc);
   overflow-x: hidden;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width:768px) {
+  body{
+    background-color: var(--bg-primary,#fcfcfc);
+    overflow-x: hidden;
+    margin-top: 6rem;
+  }
 }
 
 ::-webkit-scrollbar{

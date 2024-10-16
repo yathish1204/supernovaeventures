@@ -5,11 +5,16 @@ import Title from '../Title';
 import Image from 'next/image';
 import aboutImg from '../../assets/aboutImg.png'
 import qn from '../../assets/question.svg'
+import LandPage from '../LandPage/LandPage';
+import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
   return (
     <main className={styles.homeSec}>
       {/* Hero Section */}
+      <LandPage />
+      {/* Hero Section */}
+
       <Title text1={'ABOUT US'} />
       <section className={styles.aboutSec}>
             <div className={styles.left}>
@@ -26,6 +31,8 @@ const Home = () => {
                 </div>
       </section>
 
+      <Testimonials />
+
       <div className={styles.qTitle}><Title text1={'Any Queries '} /><Image className={styles.qn} src={qn} alt='question icon' priority /></div>
       <section className={styles.queries}>
             <p className={styles.p1}>We are pleased to address any queries you may have regarding event execution. Let’s connect to ensure your event’s success.</p>
@@ -34,6 +41,8 @@ const Home = () => {
             </div>
             
       </section>
+
+     
     </main>
   )
 }

@@ -3,7 +3,7 @@ import Button from '@/components/Button'
 import Input from '@/components/Input'
 import Title from '@/components/Title'
 import Image from 'next/image'
-import check from '../assets/check.png'
+import check from '../assets/Check.png'
 import styles from '../components/Contact.module.css'
 import mail from '../assets/mail.png'
 import phone from '../assets/phone.png'
@@ -29,7 +29,7 @@ const Contact = () => {
                     <Image  className={styles.icon} src={mail} alt='mail icon' />
                     <div className={styles.innerLeft}>
                         <p className={styles.label}>Email</p>
-                        <Link href='contact@supernovaeventures.com' target='_blank'><p className={styles.labelInp}>contact@supernovaeventures.com</p></Link>
+                        <Link href='mailto:contact@supernovaeventures.com' target='_blank'><p className={styles.labelInp}>contact@supernovaeventures.com</p></Link>
                     </div>
                 </div>
                 <div className={styles.l1}>
@@ -54,10 +54,10 @@ const Contact = () => {
             <div className={styles.right}>
                 <h3 className={styles.h3}>Let's get in touch</h3>
                 <div className={styles.rightIn}>
-                    <Input label='Full Name' isInput={true} type={`text`} placeholder='Full Name'  />
-                    <Input label='Email' isInput={true} type={`email`} placeholder='Email'  />
-                    <Input label='Phone Number' isInput={true}  type={`tel`} placeholder='Phone Number'  />
-                    <Input label='Message' isInput={false} type={`textarea`} placeholder='Message'  />
+                    <Input label='Full Name' isInput={true} type={`text`} title={'Please enter your Fullname'} placeholder='Full Name'  />
+                    <Input label='Email' isInput={true} type={`email`} title={'Please enter your Email'} placeholder='Email'  />
+                    <Input label='Phone Number' isInput={true}  type={`tel`} title={'Please enter your Phone number'} placeholder='Phone Number'  />
+                    <Input label='Message' isInput={false} type={`textarea`} title={'Please enter your Message'} placeholder='Message'  />
                     <div className={styles.cta}>
                         <Button href='' text='Send Message' />
                     </div>

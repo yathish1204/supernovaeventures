@@ -2,3 +2,8 @@
     color: var(--accent-color, #F76B5D);
 }
 
+
+.link{
+    padding: 0.5rem 0;
+}
+

@@ -1,3 +1,6 @@
+"use client" 
+
+import {useState,useEffect} from 'react';
 import Image from 'next/image';
 import styles  from '../components/Navbar.module.css';
 import Link from 'next/link';
@@ -8,8 +11,30 @@ import menu from '../assets/menu.svg';
 
 const Navbar = () => {
 
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if(typeof window!=='undefined'){
+      if(window.scrollY>lastScrollY){
+        setShowNavbar(false);
+      }else{
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  }
+
+  useEffect(() => {
+     window.addEventListener('scroll',controlNavbar);;
+
+     return () => {
+      window.addEventListener('scroll',controlNavbar);
+     }
+  }, [lastScrollY]);
+
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${showNavbar ? styles.show : styles.hide}`}>
       <Link href='/'><div className={styles.logo}><Image className={styles.logoImg} src={logo} alt='logo' priority  /><p className={styles.logotxt}>SUPERNOVA</p></div></Link>
         <ul className={styles.ul}>
             <li className={styles.li}><NavLink href='/'>Home</NavLink></li>

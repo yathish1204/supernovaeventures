@@ -33,7 +33,7 @@ const Footer = () => {
         <div className={styles.iconSet} >
             <h4 className={styles.h4}>SOCIAL LINKS</h4>
             <ul className={styles.iconContainer}>
-                <li><NavLink  target="_blank" href='https://www.linkedin.com/in/supernovaeventures'><Image className={styles.icons} src={linkedin} alt='social links'  /></NavLink></li>
+                <li><NavLink   target="_blank" href='https://www.linkedin.com/in/supernovaeventures'><Image className={styles.icons} src={linkedin} alt='social links'  /></NavLink></li>
                 <li><NavLink target="_blank" href='https://www.instagram.com/supernovaeventures'><Image className={styles.icons} src={instgarm} alt='social links'  /></NavLink></li>
                 <li><NavLink target="_blank" href='https://www.youtube.com/@SupernovaEventures'><Image className={styles.icons} src={youtube} alt='social links'  /></NavLink></li>
                 <li><NavLink target="_blank" href='https://x.com/supernovaeventu'><Image className={styles.icons} src={twitter} alt='social links'  /></NavLink></li>

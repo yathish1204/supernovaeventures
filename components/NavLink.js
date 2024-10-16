@@ -11,7 +11,11 @@ const NavLink = ({href,children,target}) => {
     const isActive = href === '/' ? path === href : path.startsWith(href);
 
   return (
-      <Link href={href} className={isActive ? `${styles.active}` : ''} target={target} >{children}</Link>
+    <Link href={href} legacyBehavior>
+    <a onClick={()=>{window.scrollTo({top:0,behavior:'smooth'})}} className={`${styles.link} ${isActive ? styles.active : ''}`} target={target}>
+      {children}
+    </a>
+  </Link>
   )
 }
 

@@ -1,0 +1,16 @@
+.loadingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

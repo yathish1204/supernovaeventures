@@ -1,13 +1,13 @@
 import React from 'react';
-
+import styles from './Loading.module.css'
 
 
 const Loading = () => {
 
     return (
-      <div >
-        {/* <a href="https://iconscout.com/lottie-animations/couple-heart" class="text-underline font-size-sm" target="_blank">Couple Heart</a> by <a href="https://iconscout.com/contributors/robin-donvai" class="text-underline font-size-sm" target="_blank">Robin's Pixel</a> */}
-        <p>Loading...</p>
+      <div className={styles.loadContainer}>
+        
+        <p className={styles.p}>Loading...Please wait</p>
       </div>
     );
 }
