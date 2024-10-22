@@ -30,18 +30,29 @@
 }
 
 .logoImg{
-    width: 2rem;
-    height: 2.25rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
+}
+
+.logoTxts{
+    display: flex;
+    flex-direction: column;
 }
 
 .logotxt{
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: 2.625rem;
+    line-height: 1.5rem;
     color: var(--HeadlinePrimary);
 }
+
+.logoSmallTxt{
+    display: block;
+    font-size: 1.15rem;
+    color: var(--HeadlinePrimary);
+}
+
 
 .menu {
     display: none;
@@ -100,10 +111,11 @@
         width: 2rem;
         height: 2.3rem; 
     }
-    .logoText{
-        color: var(--HeadingColor1, #393939);
+    .logotxt{
         font-size: 1.25rem;
-        font-weight: 600;
-        line-height: 2.625rem; /* 210% */
+        line-height:1.2rem; /* 210% */
+    }
+    .logoSmallTxt{
+       display: none;
     }
 }

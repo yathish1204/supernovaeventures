@@ -8,7 +8,7 @@
   --accent-color:#F76B5D;
   --HeadlinePrimary: #393939;
   --text-secondary:#606060;
-  --text-tertialry:#888888;
+  --text-tertialry:#4f4f4f;
   --ivory-white:#fffff0;
   --bg-secondary:##F7F7F7;
 }
@@ -19,12 +19,34 @@ body{
   margin-top: 8rem;
 }
 
+.bot{
+  position: fixed;
+  right: -3rem;
+  bottom: 6rem;
+  z-index: 15;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 500vh;
+}
+
+
 @media screen and (max-width:768px) {
   body{
     background-color: var(--bg-primary,#fcfcfc);
     overflow-x: hidden;
     margin-top: 6rem;
   }
+  .bot{
+    position: fixed;
+    right: -3rem;
+    bottom: 4rem;
+    z-index: 15;
+  }
+  
 }
 
 ::-webkit-scrollbar{
@@ -64,9 +86,4 @@ body{
   align-items: center;
 }
 
-.bot{
-  position: fixed;
-  right: -4rem;
-  bottom: 7rem;
-  z-index: 15;
-}
+

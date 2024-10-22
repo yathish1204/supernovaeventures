@@ -17,19 +17,19 @@ const Contact = () => {
     const  sent = true;
   return (
         <main className={styles.contactSec}>
-            <div className='floral'>
+            {/* <div className='floral'>
                 <Image  src={flower} alt='floral decoration' priority />
-            </div>
+            </div> */}
             <Title text1='CONTACT US' />
             <div className={styles.main}>
             <div className={styles.left}>
-                <h3 className={styles.h3}>You can find us at</h3>
+                <div className={styles.h3}><h3 >You can find us at</h3></div>
                 <div className={styles.leftGroup}>
                 <div className={styles.l1}>
                     <Image  className={styles.icon} src={mail} alt='mail icon' />
                     <div className={styles.innerLeft}>
                         <p className={styles.label}>Email</p>
-                        <Link href='mailto:contact@supernovaeventures.com' target='_blank'><p className={styles.labelInp}>contact@supernovaeventures.com</p></Link>
+                        <Link href='mailto:contact@supernovaeventures.com,praveennain223@gmail.com,iamsachinsingh01@gmail.com?cc=contact@supernovaeventures.com&bcc=contact@supernovaeventures.com&subject='  target='_blank'><p className={styles.labelInp}>contact@supernovaeventures.com</p></Link>
                     </div>
                 </div>
                 <div className={styles.l1}>
@@ -57,7 +57,7 @@ const Contact = () => {
                     <Input label='Full Name' isInput={true} type={`text`} title={'Please enter your Fullname'} placeholder='Full Name'  />
                     <Input label='Email' isInput={true} type={`email`} title={'Please enter your Email'} placeholder='Email'  />
                     <Input label='Phone Number' isInput={true}  type={`tel`} title={'Please enter your Phone number'} placeholder='Phone Number'  />
-                    <Input label='Message' isInput={false} type={`textarea`} title={'Please enter your Message'} placeholder='Message'  />
+                    <div className={styles.textArea}><Input label='Message' isInput={false} type={`textarea`} title={'Please enter your Message'} placeholder='Message'  /></div>
                     <div className={styles.cta}>
                         <Button href='' text='Send Message' />
                     </div>

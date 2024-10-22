@@ -35,7 +35,12 @@ const Navbar = () => {
 
   return (
     <nav className={`${styles.nav} ${showNavbar ? styles.show : styles.hide}`}>
-      <Link href='/'><div className={styles.logo}><Image className={styles.logoImg} src={logo} alt='logo' priority  /><p className={styles.logotxt}>SUPERNOVA</p></div></Link>
+      <Link href='/'><div className={styles.logo}><Image className={styles.logoImg} src={logo} alt='logo' priority  />
+      <div className={styles.logoTxts}>
+      <p className={styles.logotxt}>SUPERNOVA</p>
+      <p className={styles.logoSmallTxt}>Eventures</p>
+      </div>
+      </div></Link>
         <ul className={styles.ul}>
             <li className={styles.li}><NavLink href='/'>Home</NavLink></li>
             <li className={styles.li}><NavLink href='/services'>Services</NavLink></li>

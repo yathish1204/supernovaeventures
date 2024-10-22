@@ -15,9 +15,9 @@ const expert = [
 const Service = () => {
   return (
     <main className={styles.serviceSec}>
-       <div className='floral'>
+       {/* <div className='floral'>
                 <Image  src={flower} alt='floral decoration' priority />
-        </div>
+        </div> */}
             <Title text1='OUR SERVICES' />
             <div className={styles.service}>
                 <div className={styles.why}>

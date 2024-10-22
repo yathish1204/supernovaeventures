@@ -3,12 +3,16 @@ import styles from './LandPage.module.css'
 import Image from 'next/image'
 import landImg from '../../assets/LandImg.png'
 import landTitle from '../../assets/LandTitle.png'
+import HeroBg from '../HeroBg/HeroBg'
 
 const LandPage = () => {
   return (
     <div className={styles.landSec}>
         <div className={styles.landContainer}>
-            <Image className={styles.landImg} src={landImg} alt='landing image' />
+            {/* <Image className={styles.landImg} src={landImg} alt='landing image' /> */}
+            <div className={styles.landImg} >
+              <HeroBg />
+            </div>
             <p className={styles.welcomeLine}>Welcome to</p>
             <Image className={styles.landTitle} src={landTitle} alt='landing image' />
             <p className={styles.tagLine}>Dreams To Reality</p>

@@ -114,6 +114,15 @@
     line-height: 2.1rem; /* 210% */
 }
 
+.designers{
+    color: var(--TextSecondary, #606060);
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.1rem; /* 210% */
+}
+
 
 @media screen and  (max-width:1024px) and (min-width:768px) {
     .footerInner{
@@ -165,6 +174,12 @@
         align-self: stretch;
         flex-wrap: wrap;
     }
+    .designers{
+        text-align: center;
+        text-wrap: wrap;
+        font-size: 1rem;
+        line-height: 2.1rem;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -181,6 +196,13 @@
     .copy{
         text-align: left;
         padding-left: 1rem;
+        width: 90vw;
+    }
+    .designers{
+        margin-top: -1rem;
+        text-align: left;
+        padding-left: 1rem;
+        width: 90vw;
     }
     .logo{
         width: 2.5rem;
@@ -199,7 +221,7 @@
         flex-wrap: wrap;
     }
     .ul{
-        gap: 0.85rem;
+        gap: 1.25rem;
         width: fit-content;
     }
 }

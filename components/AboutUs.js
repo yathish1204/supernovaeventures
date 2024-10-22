@@ -18,13 +18,13 @@ export const admins = [
 const AboutUs = () => {
   return (
     <main className={styles.aboutSec}>
-       <div className='floral'>
+       {/* <div className='floral'>
                 <Image  src={flower} alt='floral decoration' priority />
-        </div>
+        </div> */}
             <Title text1='ABOUT US' />
             <div className={styles.aboutContent}>
                 {/* <div className={styles.intro}> */}
-                    <p className={styles.introPara}>Our team is highly collaborative and supportive, coming together on every project to ensure every event reaches it’s full potential.</p>
+                    <p className={styles.introPara}>Our team is highly collaborative and supportive, coming together on every project to ensure every event reaches it&apos;s full potential.</p>
                 {/* </div> */}
                 <div className={styles.mission}>
                     <h3 className={styles.h3}>Our Mission</h3>

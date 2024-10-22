@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
       {/* <hr className={styles.hr}/> */}
       <p className={styles.copy}>&copy; 2024 - All Rights Reserved | Supernova Eventures</p>
-      <p className={styles.copy}>Designed & Developed - <Link target='_blank'   href='https://www.linkedin.com/in/yathishshettigar'><b>Yathish Shettigar</b></Link></p>
+      <p className={styles.designers}>Designed & Developed - <Link target='_blank'   href='https://www.linkedin.com/in/yathishshettigar'><b>Yathish Shettigar</b></Link> & <Link  target='_blank'   href='https://www.linkedin.com/in/syed-inayath-49401a184'><b>Syed Inayath</b></Link></p>
     </footer>
   )
 }

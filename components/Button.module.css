@@ -39,7 +39,7 @@
 
 @media screen and (max-width:768px){
     .btnText{
-        font-size: 1rem;
+        font-size: 1.15rem;
         text-wrap: nowrap;
     }
     .btnContainer{

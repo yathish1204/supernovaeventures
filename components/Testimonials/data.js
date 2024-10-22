@@ -10,10 +10,10 @@ export const data = [
     {name:'Praveen ❤️ babhi',quote:'Your hospitality team was fantastic. They took great care of our guests handled everything smoothly and made sure everything ran on time.',rating:fourStar, profile:client1},
     
     {name:'Dev ❤️ Devika',quote:'Supernova Eventures delivered exceptional service with skilled staff flawless logistics and stunning designs. Their attention to detail and client-focused approach made our events truly unforgettable. Highly recommend!',rating:fiveStar,profile:client1},
-    // {name:'Praveen ❤️ babhi',quote:'Your hospitality team was fantastic. They took great care of our guests handled everything smoothly and made sure everything ran on time.',rating:fourStar,profile:client1},
+    {name:'Praveen ❤️ babhi',quote:'Your hospitality team was fantastic. They took great care of our guests handled everything smoothly and made sure everything ran on time.',rating:fourStar,profile:client1},
     
-    // {name:'Dev ❤️ Devika',quote:'Supernova Eventures delivered exceptional service with skilled staff flawless logistics and stunning designs. Their attention to detail and client-focused approach made our events truly unforgettable. Highly recommend!',rating:fiveStar,profile:client1},
-    // {name:'Praveen ❤️ babhi',quote:'Your hospitality team was fantastic. They took great care of our guests handled everything smoothly and made sure everything ran on time.',rating:fourStar,profile:client1},
+    {name:'Dev ❤️ Devika',quote:'Supernova Eventures delivered exceptional service with skilled staff flawless logistics and stunning designs. Their attention to detail and client-focused approach made our events truly unforgettable. Highly recommend!',rating:fiveStar,profile:client1},
+    {name:'Praveen ❤️ babhi',quote:'Your hospitality team was fantastic. They took great care of our guests handled everything smoothly and made sure everything ran on time.',rating:fourStar,profile:client1},
     
   ];
 

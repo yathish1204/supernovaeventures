@@ -2,12 +2,12 @@
     color: var(--HeadingColor1, #393939);
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 3.5rem; /* 140% */
 }
 
 .p{
-    color: var(--textTertiary, #888);
+    color: var(--textTertiary, #4f4f4f);
     text-align: center;
     font-size: 1.25rem;
     font-weight: 400;
@@ -19,7 +19,7 @@
 .h3{
     color: var(--HeadingColor1, #393939);
     font-size: 1.875rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 2.625rem; /* 140% */
 }
 
@@ -31,16 +31,16 @@
 }
 
 .li{
-    color: var(--textTertiary, #888);
-    font-size: em;
+    color: var(--textTertiary, #4f4f4f);
+    font-size: 1.15rem;
     font-weight: 400;
     line-height: 2.1rem; /* 168% */
 }
 
 .b{
     color: var(--HeadingColor1, #393939);
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 700;
     line-height: 2.1rem; /* 168% */
 }
 
@@ -112,10 +112,10 @@
 }
 
 .para{
-    color:var(--HeadingColor1);
+    color:var(--HeadingColor1, #393939);
     text-align: center;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2.1rem; /* 168% */
 }
 
@@ -125,6 +125,7 @@
     .h2{
         text-align: center;
         font-size: 2.5rem;
+        font-weight: 700;
     }
     
     .p{
@@ -173,13 +174,13 @@
     .h2{
         text-align:left;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 2.8rem;
     }
     
     .p{
         text-align:left;
-        font-size: 1rem;
+        font-size: 1.15rem;
         width: 90vw;
         margin-top: 0.4rem;
     }
@@ -228,9 +229,8 @@
         gap: 0.5rem;
     }
     .para{
-        color: #000;
+        color: var(--textTertiary,#4f4f4f);
         font-size: 1rem;
-        font-weight: 400;
     }
     .excellence{
         width: 3.125rem;
